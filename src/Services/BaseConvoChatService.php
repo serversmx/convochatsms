@@ -34,13 +34,18 @@ abstract class BaseConvoChatService
     {
         try {
             $requestOptions = [
-                'json' => $data,
                 'headers' => [
                     'Content-Type' => 'application/json',
                     'Accept' => 'application/json',
                 ],
                 'timeout' => $this->timeout,
             ];
+
+            if ($method === 'GET') {
+                $requestOptions['query'] = $data;
+            } else {
+                $requestOptions['json'] = $data;
+            }
 
             $response = $this->client->request($method, $this->baseUrl . $endpoint, $requestOptions);
 
