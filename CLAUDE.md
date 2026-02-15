@@ -6,7 +6,7 @@
 
 **Nombre:** ConvoChat Laravel SMS & WhatsApp Gateway
 **Package:** `convochatsms/laravel-sms-whatsapp-gateway`
-**Versión actual:** 1.1.1
+**Versión actual:** 4.0.1
 **Licencia:** MIT
 **Repositorio:** https://github.com/RenatoAscencio/convochatsms
 **Tipo:** Paquete Laravel para integración con ConvoChat API
@@ -711,7 +711,7 @@ c847515 - Agregar badge de status de tests en README
 - **PHP CS Fixer:** Configurado ✅
 - **CI/CD:** GitHub Actions activo ✅
 - **Coverage:** Configurado (badges disponibles)
-- **Versión estable:** 1.1.1
+- **Versión estable:** 4.0.1
 
 ## Notas para asistentes de IA
 

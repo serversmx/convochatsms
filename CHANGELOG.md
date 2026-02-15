@@ -17,6 +17,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [4.0.1] - 2026-02-15
+
+### Fixed
+
+- Fixed `BaseConvoChatService::makeRequest()` sending GET request data as JSON body instead of query parameters, causing "Invalid Parameters!" errors on endpoints like `/validate/whatsapp`, `/get/wa.accounts`, and all other GET endpoints
+
+---
+
 ## [4.0.0] - 2026-01-31
 
 ### Security
