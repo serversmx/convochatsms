@@ -8,7 +8,7 @@ on:
 
 jobs:
   tests:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     strategy:
       fail-fast: false
@@ -77,7 +77,7 @@ jobs:
       run: vendor/bin/phpunit
 
   code-quality:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     name: Code Quality
 
     steps:
@@ -109,7 +109,7 @@ jobs:
       run: vendor/bin/php-cs-fixer fix --dry-run --diff --format=checkstyle | cs2pr
 
   coverage:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     name: Code Coverage
 
     steps:
